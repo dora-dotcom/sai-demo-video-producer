@@ -6,7 +6,7 @@
   {"key":"step2Title","label":"Step 2 title","type":"text","defaultValue":"SYMBOLIC"},
   {"key":"step2Body","label":"Step 2 description","type":"text","defaultValue":"Compile the proven workflow into code"},
   {"key":"step3Title","label":"Step 3 title","type":"text","defaultValue":"REPEAT"},
-  {"key":"step3Body","label":"Step 3 description","type":"text","defaultValue":"Run it again with far fewer tokens"},
+  {"key":"step3Body","label":"Step 3 description","type":"text","defaultValue":"Run it again with far fewer tokens — and much faster"},
   {"key":"backgroundColor","label":"Background","type":"color","defaultValue":"#F9FAF5"},
   {"key":"textColor","label":"Text","type":"color","defaultValue":"#0C0C0C"},
   {"key":"mutedColor","label":"Muted text","type":"color","defaultValue":"#6A6A6A"},

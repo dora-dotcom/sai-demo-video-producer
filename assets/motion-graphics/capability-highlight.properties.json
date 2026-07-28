@@ -1,0 +1,12 @@
+[
+  {"key":"eyebrow","label":"Eyebrow","type":"text","defaultValue":"REAL COMPUTER USE"},
+  {"key":"headline","label":"Headline","type":"text","defaultValue":"UI changes don’t break the workflow."},
+  {"key":"detail","label":"Detail","type":"text","defaultValue":"Sai sees the screen, handles the pop-up, and keeps going."},
+  {"key":"mode","label":"Visual Mode","type":"select","options":[{"label":"Popup windows","value":"popup"},{"label":"Native files","value":"files"}],"defaultValue":"popup"},
+  {"key":"fontFamily","label":"Font","type":"font","defaultValue":"Manrope"},
+  {"key":"accentColor","label":"Accent","type":"color","defaultValue":"#16D342"},
+  {"key":"surfaceColor","label":"Surface","type":"color","defaultValue":"#0C0C0C"},
+  {"key":"textColor","label":"Text","type":"color","defaultValue":"#F9FAF5"},
+  {"key":"mutedColor","label":"Muted text","type":"color","defaultValue":"#BFC6BE"},
+  {"key":"transparentBackground","label":"Transparent surface","type":"boolean","defaultValue":false}
+]
