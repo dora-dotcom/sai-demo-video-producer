@@ -28,7 +28,7 @@ Use the four pillars printed on the Sai frame as the approved messaging structur
 1. `EVERY OS` — Sai works across macOS, Windows, and Android. Do not mention Linux unless the user explicitly asks.
 2. `GUI-NATIVE` — Sai works through the graphical interface, so an API or MCP integration is not required.
 3. `ALWAYS ON` — Sai can run in a full Windows VM in the cloud; BYOD is also available.
-4. `TOKEN-EFFICIENT` — after a successful reasoning-led run, the proven workflow can become deterministic code and execute repeatedly with far fewer tokens.
+4. `TOKEN-EFFICIENT` — after a successful reasoning-led run, the proven workflow can become deterministic code and execute repeatedly with far fewer tokens and much faster execution. Keep this qualitative; do not introduce an unverified multiplier.
 
 Apply these editorial rules:
 
@@ -64,6 +64,37 @@ Use these defaults on a 1920×1080 timeline and scale proportionally for other s
 
 Keep captions to one or two readable lines. Correct `Sai`, `Simular`, `neuro-symbolic`, `Sai for Business`, and `sai.work` after generation.
 
+Do not show captions on the final CTA card. The two destinations are already typeset in the card, and a second text layer competes with the call to action. Keep the CTA voiceover and music ducking; hide only the CTA narration's caption words.
+
+## Capability-highlight callouts
+
+Create from `assets/motion-graphics/capability-highlight.jsx`.
+
+- Duration: 8 seconds at the timeline frame rate.
+- Natural size: 720×210; place in the upper-right safe area without covering the active control or document result.
+- Look: black Sai surface, green left rule and accent, Manrope type, short entrance, stable hold, short exit.
+- Use sparingly at proof moments that distinguish real computer use from API automation.
+- Anchor the callout and its matching VO to the same first visible evidence frame. Do not place the VO later merely because a repeated instance of the action is easier to find.
+- Verify the first frame, a settled middle frame, and the exit against the composed timeline.
+
+Recommended modes and copy:
+
+1. Pop-up resilience
+   - Eyebrow: `GUI-NATIVE`
+   - Headline: `Sai works through changing interfaces.`
+   - Detail: `System prompts and pop-up windows do not break the workflow.`
+   - Place when Sai has visibly handled one or more OS/app prompts and the UI returns to the task.
+2. Human in the loop
+   - Eyebrow: `HUMAN IN THE LOOP`
+   - Headline: `Sai pauses when judgment is needed.`
+   - Detail: `It asks for human input, then resumes with the decision in context.`
+   - Place when the chat visibly stops for a question, uncertainty, approval, or signature decision.
+3. Native file handling
+   - Eyebrow: `NATIVE FILE HANDLING`
+   - Headline: `Sai opens folders and uploads local files.`
+   - Detail: `It works through the native file picker—not a hidden API.`
+   - Place on the first meaningful native file-picker interaction. Align the related VO with the callout's first frame.
+
 ## Music
 
 - Use a minimal, modern instrumental technology bed without vocals.
@@ -86,12 +117,12 @@ Create from `assets/motion-graphics/neuro-symbolic.jsx`.
 - Step 02 title: `SYMBOLIC`
 - Step 02 body: `Compile the proven workflow into code`
 - Step ∞ title: `REPEAT`
-- Step ∞ body: `Run it again with far fewer tokens`
+- Step ∞ body: `Run it again with far fewer tokens — and much faster`
 - Footer: `LLM flexibility × deterministic code`
 
 Fixed voiceover:
 
-> Sigh uses a neuro-symbolic approach. The first successful run uses model reasoning. Then the workflow becomes deterministic code, ready to execute again and again with far fewer tokens.
+> Sigh uses a neuro-symbolic approach. The first successful run uses model reasoning. Then the proven workflow becomes deterministic code, ready to execute again and again with far fewer tokens—and much faster.
 
 Caption display correction: replace `Sigh` with `Sai`.
 
@@ -119,7 +150,7 @@ Fixed voiceover:
 
 > Interested in bringing Sigh to your organization? Search for Sai for Business. To experience our consumer product, visit sai dot work.
 
-Caption display correction: replace `Sigh` with `Sai`; display the URL as `sai.work`.
+Do not display captions during this CTA voiceover.
 
 ## End sequence
 

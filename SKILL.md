@@ -31,15 +31,16 @@ Produce the full Sai demo package while preserving editability and stating resol
 3. Generate both approved Sai frame variants with `sai-demo-frame-generator`; use light unless the footage needs dark. Fit the recording beneath the exact 16:9 opening without stretching.
 4. Inspect representative source frames and map visible actions to narration beats. Write concise English narration that explains what Sai is doing and why it matters; do not describe unverified actions. Weave the four approved product-capability pillars into natural visual pauses using `references/production-spec.md`.
 5. Generate segmented English voiceover with Mark. Write `Sigh` in TTS input when needed to obtain the pronunciation “赛”, but display `Sai` in captions and graphics.
-6. Create English captions from the final narration and apply the fixed style from `references/production-spec.md`. Correct brand spellings manually.
+6. Create English captions from the final narration and apply the fixed style from `references/production-spec.md`. Correct brand spellings manually. Keep the final CTA card caption-free; its destinations are already typeset on screen.
 7. Add a restrained instrumental technology bed. Keep narration dominant and use music ducking; omit music only when the user asks or it harms clarity.
-8. Append the fixed neuro-symbolic card, then the fixed CTA card. Use the bundled JSX and brand assets exactly as directed in `references/production-spec.md`.
-9. Verify source/action sync, frame fit, caption legibility, pronunciation, music ducking, end-card order, logo integrity, and final duration using composed timeline frames.
-10. Deliver according to `references/4k-delivery.md`. Never label an upscale as native 4K.
+8. Add capability-highlight callouts only at high-value proof moments such as resilient pop-up handling, human-in-the-loop pauses, and native file selection. Use the bundled callout JSX and follow its timing rules in `references/production-spec.md`.
+9. Append the fixed neuro-symbolic card, then the fixed CTA card. Use the bundled JSX and brand assets exactly as directed in `references/production-spec.md`.
+10. Verify source/action sync, callout/VO first-frame sync, frame fit, caption legibility, pronunciation, music ducking, end-card order, CTA caption suppression, logo integrity, and final duration using composed timeline frames.
+11. Deliver according to `references/4k-delivery.md`. Never label an upscale as native 4K.
 
 ## Fixed versus variable content
 
-- Keep fixed: neuro-symbolic card design/copy/VO, CTA design/copy/VO, palette, Manrope typography, caption style, Mark voice, pronunciation rule, four capability pillars, and end-card order.
+- Keep fixed: capability-highlight visual system, neuro-symbolic card design/copy/VO, CTA design/copy/VO, palette, Manrope typography, caption style, caption-free CTA, Mark voice, pronunciation rule, four capability pillars, and end-card order.
 - Adapt per demo: Industry / Demo / Description, body narration, capability wording and placement, narration timing, footage trims, and total music duration.
 - Change fixed content only when the user explicitly asks.
 
@@ -47,6 +48,8 @@ Produce the full Sai demo package while preserving editability and stating resol
 
 - `assets/motion-graphics/neuro-symbolic.jsx` — resolution-adaptive fixed explainer.
 - `assets/motion-graphics/neuro-symbolic.properties.json` — its ChatCut property schema.
+- `assets/motion-graphics/capability-highlight.jsx` — reusable 8-second proof-point callout for pop-ups, human-in-the-loop moments, and native file handling.
+- `assets/motion-graphics/capability-highlight.properties.json` — its ChatCut property schema.
 - `assets/motion-graphics/cta.jsx` — resolution-adaptive fixed CTA.
 - `assets/motion-graphics/cta.properties.json` — its ChatCut property schema.
 - `assets/brand/sai-logo-primary-horizontal.svg` — CTA Sai logo.
