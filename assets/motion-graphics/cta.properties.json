@@ -1,0 +1,17 @@
+[
+  {"key":"headline","label":"Headline","type":"text","defaultValue":"Ready to work with Sai?"},
+  {"key":"teamLabel","label":"Team label","type":"text","defaultValue":"For teams"},
+  {"key":"teamAction","label":"Team CTA","type":"text","defaultValue":"Search “Sai for Business”"},
+  {"key":"consumerLabel","label":"Consumer label","type":"text","defaultValue":"For everyone"},
+  {"key":"consumerAction","label":"Consumer CTA","type":"text","defaultValue":"sai.work"},
+  {"key":"poweredBy","label":"Powered by text","type":"text","defaultValue":"Powered by Sai"},
+  {"key":"accentColor","label":"Accent color","type":"color","defaultValue":"#16D342"},
+  {"key":"backgroundColor","label":"Background color","type":"color","defaultValue":"#F9FAF5"},
+  {"key":"textColor","label":"Text color","type":"color","defaultValue":"#0C0C0C"},
+  {"key":"mutedColor","label":"Muted text color","type":"color","defaultValue":"#6A6A6A"},
+  {"key":"dividerColor","label":"Divider color","type":"color","defaultValue":"#E2E2DF"},
+  {"key":"fontFamily","label":"Font","type":"font","defaultValue":"Manrope"},
+  {"key":"saiLogoImage","label":"Sai logo","type":"image","defaultValue":""},
+  {"key":"logoImage","label":"Simular logo","type":"image","defaultValue":""},
+  {"key":"transparentBackground","label":"Transparent background","type":"boolean","defaultValue":false}
+]

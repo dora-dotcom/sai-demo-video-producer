@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sai Demo Video Producer"
+  short_description: "Create branded Sai demos with voice and fixed end cards"
+  default_prompt: "Use $sai-demo-video-producer to turn my silent Sai screen recording into a polished branded demo video."
