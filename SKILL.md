@@ -72,9 +72,10 @@ Read `references/delivery-cuts.md` before building either one.
    - `chatcut:verification`
    - `chatcut:export`
 2. Load `google-drive:google-sheets` before reading a Demo Library row. Treat the sheet as read-only.
-3. Read `references/delivery-cuts.md` before cutting; it defines both cuts and the strip list.
-4. Read `references/production-spec.md` before writing narration, captions, music, or end cards. Skip it for an `annotated-silent`-only request.
-5. Read `references/4k-delivery.md` whenever the source or requested delivery is 4K.
+3. Read `references/delivery-cuts.md` before cutting; it defines both cuts, the rate card, and the dead-air test.
+4. Read `references/naming.md` before creating a timeline or exporting anything.
+5. Read `references/production-spec.md` before writing narration, captions, music, or end cards. Skip it for an `annotated-silent`-only request.
+6. Read `references/4k-delivery.md` whenever the source or requested delivery is 4K.
 
 ## Generate the approved outer frame
 
@@ -122,7 +123,7 @@ step 13 builds `annotated-silent` and is independent of them.
 11. Append the fixed neuro-symbolic card, then the fixed CTA card. Use the bundled JSX and brand assets exactly as directed in `references/production-spec.md`.
 12. Verify source/action sync, frame fit, caption legibility, pronunciation, music ducking, end-card order, logo integrity, and final duration using composed timeline frames.
 13. Build `annotated-silent` on its own timeline from the full source: run both scans in `references/delivery-cuts.md` (agent run state, and picture change), cut only the pauses where neither signal shows activity, pick a playback rate per act, lay every surviving segment end to end at its act's rate, then add one stage-coloured step label per act carrying that rate. Do not derive it from the marketing cut, and do not reuse that cut's trims.
-14. Deliver according to `references/4k-delivery.md`. Never label an upscale as native 4K.
+14. Deliver according to `references/4k-delivery.md`, naming every file and timeline per `references/naming.md`. Never label an upscale as native 4K.
 
 ## Fixed versus variable content
 
@@ -141,7 +142,8 @@ Text and code travel with this skill:
 - `scripts/scan_run_state.py` — samples and clusters the `Agent run:` label, so you know when a run was actually in flight.
 - `scripts/scan_picture_change.py` — frame-differences a recording and writes the per-sample change counts.
 - `scripts/build_annotated_cut.py` — combines both signals into the between-runs cut list, applies the per-act rates, and lays out the step labels.
-- `references/delivery-cuts.md` — the two cuts, the strip list, and the clean-cut framing math.
+- `references/delivery-cuts.md` — the two cuts, the rate card, dead-air detection, framing math, corner mark, and step labels.
+- `references/naming.md` — filename, timeline, and asset naming patterns.
 - `references/production-spec.md` — exact copy, property defaults, pronunciation workarounds, audio, and captions.
 - `references/frame-layout-spec.md` — exact frame geometry, palette, typography, and footer copy.
 - `references/demo-library.md` — current Demo Library location, field mapping, and read procedure.
