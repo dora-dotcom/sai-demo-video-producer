@@ -15,7 +15,10 @@
 
 - Voice: Mark, English.
 - Tone: calm, credible, product-led, and concise.
-- Pronunciation: Sai sounds like “赛”. Use `Sigh` only in TTS input when necessary; all visible text must say `Sai`.
+- Pronunciation: Sai sounds like “赛”. Use `Sigh` only in TTS input when necessary; all visible text must say `Sai`. Two failure modes are known:
+  - **Sentence-initial `Sigh` is performed as a sigh, not spoken.** "This is Sigh, running inside…" produces a breath and no word. Rewrite so the name is not the second word of an opening sentence — "Meet Sigh, running inside…" works.
+  - **The URL must be spelled out.** `sai dot work` is read as one word, and `S-A-I dot work` with hyphens is too. Use `S. A. I. dot work` with periods and spaces. Captions still display `sai.work`.
+- Verify pronunciation without listening by transcribing the generated clip and reading word-level durations. A spelled-out `S. A. I.` runs roughly 1.0s against roughly 0.35s for the same token spoken as one word; a swallowed sentence-initial name shows up as a multi-second gap between caption cards.
 - Explain the visible action first, then the product capability it demonstrates.
 - When applicable, establish early that the demo is running inside a full Windows VM in the cloud.
 - Segment narration around visual beats instead of generating one monolithic file.
@@ -70,11 +73,13 @@ Keep captions to one or two readable lines. Correct `Sai`, `Simular`, `neuro-sym
 - Avoid dramatic trailer music, busy percussion, and prominent melodies.
 - Put the music beneath the complete program, including end cards.
 - Use voice-led ducking; target approximately `-23 dB` under narration and audition transitions by ear.
+- Where the editor offers no automatic ducking, hold the bed at a constant level near `-20 dB` rather than splitting the music into dozens of clips to duck by hand. Say plainly in the handoff that the level is constant, not dynamic.
+- Generated beds are usually shorter than the program. Lay two copies on separate tracks with a ~60-frame crossfade at the seam rather than butting them on one track.
 - Fade cleanly at the final CTA.
 
 ## Fixed neuro-symbolic card
 
-Create from `assets/motion-graphics/neuro-symbolic.jsx`.
+Create from `references/motion-graphics/neuro-symbolic.jsx`.
 
 - Duration: 12.3 seconds
 - Default canvas: 1920×1080 for ChatCut review
@@ -102,7 +107,22 @@ Import these assets before creating the MG:
 - `assets/brand/sai-logo-primary-horizontal.svg`
 - `assets/brand/simular-logo-black.jpg`
 
-Create from `assets/motion-graphics/cta.jsx` and set the two image properties to the imported project asset URLs.
+Create from `references/motion-graphics/cta.jsx` and set the two image properties to the imported project asset URLs.
+
+If the host cannot resolve those image properties, do not reconstruct either
+wordmark in code. Place the imported logo assets as ordinary timeline items on
+tracks above the card instead, matched to the card's own layout: the Sai
+wordmark at `left 118, top 74, 170×42` and the Simular wordmark at
+`left 1472, top 946, 330×60` on a 1920×1080 canvas, each with a ~22-frame fade
+in. The card reserves that space, so the result is identical. Convert the
+Simular JPG to a transparent PNG first — its white paper background shows as a
+block against `#F9FAF5`.
+
+A motion graphic's very first frame can render black before its background
+paints. Where a card follows another card, lay a full-canvas `#F9FAF5` plate
+underneath it for the card's duration. For the same reason, apply the
+neuro-symbolic card's fade to its contents rather than its root element, so the
+background stays solid while the card fades out into the CTA.
 
 - Duration: 11 seconds
 - Background: `#F9FAF5`
@@ -117,9 +137,9 @@ Create from `assets/motion-graphics/cta.jsx` and set the two image properties to
 
 Fixed voiceover:
 
-> Interested in bringing Sigh to your organization? Search for Sai for Business. To experience our consumer product, visit sai dot work.
+> Interested in bringing Sigh to your organization? Search for Sigh for Business. To experience our consumer product, visit S. A. I. dot work.
 
-Caption display correction: replace `Sigh` with `Sai`; display the URL as `sai.work`.
+Caption display correction: replace `Sigh` with `Sai`, render the product name as `Search “Sai for Business”`, and display the URL as `sai.work`.
 
 ## End sequence
 

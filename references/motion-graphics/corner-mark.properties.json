@@ -1,0 +1,6 @@
+[
+  {"key":"product","label":"Product name","type":"text","defaultValue":"for Business"},
+  {"key":"textColor","label":"Text","type":"color","defaultValue":"#F7F7F4"},
+  {"key":"panelColor","label":"Panel","type":"color","defaultValue":"#0C0C0C"},
+  {"key":"fontFamily","label":"Font","type":"font","defaultValue":"Manrope"}
+]
