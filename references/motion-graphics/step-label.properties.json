@@ -1,0 +1,9 @@
+[
+  {"key":"stage","label":"Stage","type":"text","defaultValue":"EXPLORATION"},
+  {"key":"label","label":"Step label","type":"text","defaultValue":"Reading the application form"},
+  {"key":"speed","label":"Speed badge","type":"text","defaultValue":"5x"},
+  {"key":"textColor","label":"Text","type":"color","defaultValue":"#F7F7F4"},
+  {"key":"accentColor","label":"Accent","type":"color","defaultValue":"#A8B0AC"},
+  {"key":"panelColor","label":"Panel","type":"color","defaultValue":"#0C0C0C"},
+  {"key":"fontFamily","label":"Font","type":"font","defaultValue":"Manrope"}
+]
