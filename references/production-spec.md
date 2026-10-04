@@ -28,7 +28,7 @@
 
 Use the four pillars printed on the Sai frame as the approved messaging structure:
 
-1. `EVERY OS` — Sai works across macOS, Windows, and Android. Do not mention Linux unless the user explicitly asks.
+1. `EVERY OS` — Sai works across macOS, Windows, Linux, and Android.
 2. `GUI-NATIVE` — Sai works through the graphical interface, so an API or MCP integration is not required.
 3. `ALWAYS ON` — Sai can run in a full Windows VM in the cloud; BYOD is also available.
 4. `TOKEN-EFFICIENT` — after a successful reasoning-led run, the proven workflow can become deterministic code and execute repeatedly with far fewer tokens.
@@ -46,7 +46,7 @@ Approved sentence patterns to adapt rather than stack verbatim:
 
 - `This demo runs inside a full Windows VM in the cloud, giving Sai a complete environment to work in.`
 - `Because Sai is GUI-native, it can complete the workflow through the interface without requiring an API or MCP integration.`
-- `The same approach extends across macOS, Windows, and Android.`
+- `The same approach extends across macOS, Windows, Linux, and Android.`
 - `Teams can use an always-on cloud VM or choose a BYOD deployment.`
 
 ## Captions
